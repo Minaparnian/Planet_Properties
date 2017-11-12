@@ -1,0 +1,210 @@
+/*------------------------------ RESET CSS ------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*------------------------------ CUSTOM ------------------------------*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.content {
+	overflow : hidden;
+	background : #111;
+
+
+}
+
+.content img {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow : hidden;
+}
+
+
+.wrapper {
+  margin : auto;
+  position : absolute;
+  top : 0;
+  left : 0;
+  right : 0;
+  bottom : 0;
+  width : 100%;
+  height : 100%;
+  overflow : hidden;
+
+}
+
+/*------------------------------ Nav ------------------------------*/
+.navigation {
+  list-style: none;
+  background: transparent;
+  border-bottom: 1px solid grey;
+
+/*change list direction from block to inline*/
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  /*define the flex container's main and cross axes*/
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  /*Push all the list on the right*/
+  justify-content: flex-start;
+  background-attachment: fixed;
+  overflow: hidden;
+
+}
+
+li.left {
+  margin-right: auto;
+
+}
+
+
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  /*height: 80px;*/
+  cursor: pointer;
+
+
+}
+
+.navigation .right:hover {
+  background: #2e3a4d;
+  cursor: pointer;
+
+}
+/*------------------------------ Main ------------------------------*/
+
+.main {
+  /*margin-top: 35px;
+  padding: 0 10px;*/
+  max-width: 900px;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+}
+
+.search-box-container {
+  margin-top: 30px;
+}
+
+.search-box-content {
+  border-radius: 4px;
+  border: 1px solid hsla(0,0%,100%,.3);
+  background: rgba(255, 255, 255, .1);
+  padding: 50px 43px 50px;
+}
+
+input {
+  width: 85%;
+  height: 50px;
+  padding-left: 20px;
+}
+
+button {
+  width: 15%;
+  height: 50px;
+  background-color: #306cad;
+  color: white;
+  border: none;
+  border-radius: none;
+}
+
+
+
+/*------------------------------ @media query ------------------------------*/
+@media all and (max-width: 800px) {
+  .navigation {
+    /*when the screen is less than 800px justify list item center and have more space around*/
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .navigation {
+
+    /*wrap the list item block*/
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+    text-align: center;
+  }
+  /*nav have border bottom when width get less than 600px*/
+  .navigation a {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+  li.left {
+    margin-right: inherit;
+
+  }
+
+
+}
