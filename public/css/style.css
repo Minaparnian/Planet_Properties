@@ -226,6 +226,33 @@ input[type="search"] {
   flex-basis: 500px;
 }
 
+/*------------------------------ Popup ------------------------------*/
+
+.popup .popup-wrap {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: white;
+	opacity: 0.97;
+	/*margin-left: 0!important;*/
+	z-index: 99999;
+}
+
+.popup .popup-wrap img {
+	position: fixed;
+	top: 40px;
+	left: 40px;
+	cursor: pointer;
+}
+
+.popup .popup-content {
+	position: fixed;
+}
+
+
+
 
 /*------------------------------ @media query ------------------------------*/
 @media all and (max-width: 800px) {

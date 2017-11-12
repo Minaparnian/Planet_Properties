@@ -75,7 +75,7 @@ var EventListener = {
 
 module.exports = EventListener;
 }).call(this,require('_process'))
-},{"./emptyFunction":6,"_process":32}],2:[function(require,module,exports){
+},{"./emptyFunction":6,"_process":33}],2:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -272,7 +272,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = emptyObject;
 }).call(this,require('_process'))
-},{"_process":32}],8:[function(require,module,exports){
+},{"_process":33}],8:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -458,7 +458,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 
 module.exports = invariant;
 }).call(this,require('_process'))
-},{"_process":32}],13:[function(require,module,exports){
+},{"_process":33}],13:[function(require,module,exports){
 'use strict';
 
 /**
@@ -635,7 +635,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = warning;
 }).call(this,require('_process'))
-},{"./emptyFunction":6,"_process":32}],17:[function(require,module,exports){
+},{"./emptyFunction":6,"_process":33}],17:[function(require,module,exports){
 /*
 object-assign
 (c) Sindre Sorhus
@@ -790,7 +790,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 module.exports = checkPropTypes;
 
 }).call(this,require('_process'))
-},{"./lib/ReactPropTypesSecret":19,"_process":32,"fbjs/lib/invariant":12,"fbjs/lib/warning":16}],19:[function(require,module,exports){
+},{"./lib/ReactPropTypesSecret":19,"_process":33,"fbjs/lib/invariant":12,"fbjs/lib/warning":16}],19:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -16166,7 +16166,7 @@ module.exports = reactDom;
 }
 
 }).call(this,require('_process'))
-},{"_process":32,"fbjs/lib/EventListener":1,"fbjs/lib/ExecutionEnvironment":2,"fbjs/lib/camelizeStyleName":4,"fbjs/lib/containsNode":5,"fbjs/lib/emptyFunction":6,"fbjs/lib/emptyObject":7,"fbjs/lib/focusNode":8,"fbjs/lib/getActiveElement":9,"fbjs/lib/hyphenateStyleName":11,"fbjs/lib/invariant":12,"fbjs/lib/shallowEqual":15,"fbjs/lib/warning":16,"object-assign":17,"prop-types/checkPropTypes":18,"react":25}],21:[function(require,module,exports){
+},{"_process":33,"fbjs/lib/EventListener":1,"fbjs/lib/ExecutionEnvironment":2,"fbjs/lib/camelizeStyleName":4,"fbjs/lib/containsNode":5,"fbjs/lib/emptyFunction":6,"fbjs/lib/emptyObject":7,"fbjs/lib/focusNode":8,"fbjs/lib/getActiveElement":9,"fbjs/lib/hyphenateStyleName":11,"fbjs/lib/invariant":12,"fbjs/lib/shallowEqual":15,"fbjs/lib/warning":16,"object-assign":17,"prop-types/checkPropTypes":18,"react":25}],21:[function(require,module,exports){
 /** @license React v16.1.0
  * react-dom.production.min.js
  *
@@ -16437,7 +16437,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 }).call(this,require('_process'))
-},{"./cjs/react-dom.development.js":20,"./cjs/react-dom.production.min.js":21,"_process":32}],23:[function(require,module,exports){
+},{"./cjs/react-dom.development.js":20,"./cjs/react-dom.production.min.js":21,"_process":33}],23:[function(require,module,exports){
 (function (process){
 /** @license React v16.1.0
  * react.development.js
@@ -17784,7 +17784,7 @@ module.exports = react;
 }
 
 }).call(this,require('_process'))
-},{"_process":32,"fbjs/lib/emptyFunction":6,"fbjs/lib/emptyObject":7,"fbjs/lib/invariant":12,"fbjs/lib/warning":16,"object-assign":17,"prop-types/checkPropTypes":18}],24:[function(require,module,exports){
+},{"_process":33,"fbjs/lib/emptyFunction":6,"fbjs/lib/emptyObject":7,"fbjs/lib/invariant":12,"fbjs/lib/warning":16,"object-assign":17,"prop-types/checkPropTypes":18}],24:[function(require,module,exports){
 /** @license React v16.1.0
  * react.production.min.js
  *
@@ -17819,7 +17819,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 }).call(this,require('_process'))
-},{"./cjs/react.development.js":23,"./cjs/react.production.min.js":24,"_process":32}],26:[function(require,module,exports){
+},{"./cjs/react.development.js":23,"./cjs/react.production.min.js":24,"_process":33}],26:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18000,7 +18000,7 @@ var HomePage = function (_Component) {
 
 exports.default = HomePage;
 
-},{"../Planet/PlanetList":30,"react":25}],28:[function(require,module,exports){
+},{"../Planet/PlanetList":31,"react":25}],28:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18021,48 +18021,134 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var Popup = function (_Component) {
+  _inherits(Popup, _Component);
+
+  function Popup() {
+    _classCallCheck(this, Popup);
+
+    return _possibleConstructorReturn(this, (Popup.__proto__ || Object.getPrototypeOf(Popup)).apply(this, arguments));
+  }
+
+  _createClass(Popup, [{
+    key: "renderPopupContent",
+    value: function renderPopupContent() {
+      return _react2.default.createElement(
+        "section",
+        { className: "popup" },
+        _react2.default.createElement(
+          "section",
+          { className: "popup-wrap" },
+          _react2.default.createElement("img", { src: "/img/close1.png", onClick: this.props.hidePopup })
+        ),
+        _react2.default.createElement(
+          "section",
+          { className: "popup-content" },
+          "Pop up content should be here"
+        )
+      );
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "section",
+        null,
+        this.props.status ? this.renderPopupContent() : null
+      );
+    }
+  }]);
+
+  return Popup;
+}(_react.Component);
+
+exports.default = Popup;
+
+},{"react":25}],29:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Popup = require('./Popup');
+
+var _Popup2 = _interopRequireDefault(_Popup);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 var Navbar = function (_Component) {
   _inherits(Navbar, _Component);
 
   function Navbar() {
     _classCallCheck(this, Navbar);
 
-    return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this));
+
+    _this.showPopup = function () {
+      _this.setState({ popupStatus: true });
+    };
+
+    _this.hidePopup = function () {
+      _this.setState({ popupStatus: false });
+    };
+
+    _this.state = {
+      popupStatus: false
+    };
+    return _this;
   }
 
   _createClass(Navbar, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        "ul",
-        { className: "navigation" },
+        'section',
+        null,
         _react2.default.createElement(
-          "li",
-          { className: "left" },
+          'ul',
+          { className: 'navigation' },
           _react2.default.createElement(
-            "a",
-            { href: "#" },
-            "Planet Properties"
+            'li',
+            { className: 'left' },
+            _react2.default.createElement(
+              'a',
+              { href: '#' },
+              'Planet Properties'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'right' },
+            _react2.default.createElement(
+              'a',
+              { href: '#' },
+              'SignUp'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'right' },
+            _react2.default.createElement(
+              'a',
+              { href: '#', onClick: this.showPopup },
+              'SignIn'
+            )
           )
         ),
-        _react2.default.createElement(
-          "li",
-          { className: "right" },
-          _react2.default.createElement(
-            "a",
-            { href: "#" },
-            "SignUp"
-          )
-        ),
-        _react2.default.createElement(
-          "li",
-          { className: "right" },
-          _react2.default.createElement(
-            "a",
-            { href: "#" },
-            "SignIn"
-          )
-        )
+        _react2.default.createElement(_Popup2.default, { status: this.state.popupStatus, hidePopup: this.hidePopup })
       );
     }
   }]);
@@ -18072,7 +18158,7 @@ var Navbar = function (_Component) {
 
 exports.default = Navbar;
 
-},{"react":25}],29:[function(require,module,exports){
+},{"./Popup":28,"react":25}],30:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18118,7 +18204,7 @@ var PlanetItem = function (_Component) {
 
 exports.default = PlanetItem;
 
-},{"react":25}],30:[function(require,module,exports){
+},{"react":25}],31:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18172,7 +18258,7 @@ var PlanetList = function (_Component) {
 
 exports.default = PlanetList;
 
-},{"./PlanetItem":29,"react":25}],31:[function(require,module,exports){
+},{"./PlanetItem":30,"react":25}],32:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -18232,7 +18318,7 @@ var App = function (_React$Component) {
 
 _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('root'));
 
-},{"./Form":26,"./HomePage":27,"./Navbar":28,"react":25,"react-dom":22}],32:[function(require,module,exports){
+},{"./Form":26,"./HomePage":27,"./Navbar":29,"react":25,"react-dom":22}],33:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -18418,4 +18504,4 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}]},{},[31]);
+},{}]},{},[32]);
