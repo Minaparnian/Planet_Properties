@@ -47,6 +47,7 @@ table {
   box-sizing: border-box;
 }
 /*------------------------------ CUSTOM ------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Righteous');
 
 body, html {
     height: 100%;
@@ -137,6 +138,8 @@ h2 {
 
 li.left {
   margin-right: auto;
+	font-family: 'Righteous', cursive;
+	
 
 }
 
@@ -174,6 +177,7 @@ li.left {
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
+
 }
 
 /*.form-box {
@@ -204,8 +208,6 @@ li.left {
 .flex-form {
   display: -webkit-box;
   display: flex;
-  z-index: 10;
-  position: relative;
   width: 500px;
   box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
 	margin: 100px auto;
@@ -237,7 +239,7 @@ input[type="search"] {
 	background-color: white;
 	opacity: 0.97;
 	/*margin-left: 0!important;*/
-	z-index: 99999;
+	/*z-index: 1;*/
 }
 
 .popup .popup-wrap img {
@@ -249,12 +251,90 @@ input[type="search"] {
 
 .popup .popup-content {
 	position: fixed;
+	text-align: center;
+	width: 400px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*------------------------------ Popup form ------------------------------*/
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #35a1e0;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    /*width: auto;*/
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+		padding-bottom: 40px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.signin-title {
+	margin-top: 20px;
+}
+
+.permission-title {
+	margin-bottom: 20px;
+	color: lightgrey;
 }
 
 
 
-
 /*------------------------------ @media query ------------------------------*/
+
 @media all and (max-width: 800px) {
   .navigation {
     /*when the screen is less than 800px justify list item center and have more space around*/
@@ -304,6 +384,12 @@ input[type="search"] {
 	.cover {
 		height: 90vh;
 	}
+	.popup .popup-wrap img {
+
+		top: 10px;
+		left: 10px;
+
+	}
 
 
 }
@@ -326,5 +412,13 @@ input[type="search"] {
   label {
     display: none;
   }
+
+	span.psw {
+			display: block;
+			float: none;
+	}
+	.cancelbtn {
+			width: 100%;
+	}
 
 }

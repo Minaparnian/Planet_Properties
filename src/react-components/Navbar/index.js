@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Popup from './Popup';
+import LoginPopup from './LoginPopup';
+import SignupPopup from './SignupPopup';
 
 export default class Navbar extends Component {
   constructor() {
@@ -20,11 +21,12 @@ export default class Navbar extends Component {
     return(
       <section>
         <ul className="navigation">
-          <li className="left"><a href="#">Planet Properties</a></li>
-          <li className="right"><a href="#">SignUp</a></li>
+          <li className="left"><h1><a href="#">Planet Properties</a></h1></li>
+          <li className="right"><a href="#" onClick={this.showPopup}>SignUp</a></li>
           <li className="right"><a href="#" onClick={this.showPopup}>SignIn</a></li>
         </ul>
-        <Popup status={this.state.popupStatus} hidePopup={this.hidePopup}/>
+        <LoginPopup status={this.state.popupStatus} hidePopup={this.hidePopup}/>
+        <SignupPopup status={this.state.popupStatus} hidePopup={this.hidePopup}/>
       </section>
     );
   }
