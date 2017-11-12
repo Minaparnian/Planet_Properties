@@ -52,7 +52,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-		background: url("http://d2ouvy59p0dg6k.cloudfront.net/img/bjorn_holland_getty__567596.jpg") center center no-repeat;
+		background: url("https://images3.alphacoders.com/210/210467.jpg") center center no-repeat;
 		background-size: cover;
 
 
@@ -94,6 +94,7 @@ h2 {
   justify-content: center;
   -webkit-box-align: start;
   align-items: flex-start;
+	margin-top: 28px;
 }
 
 .planet {
@@ -268,6 +269,15 @@ input[type="search"] {
     font-size: 0.9rem;
   }
 
+	.main-title {
+		font-size: 40px;
+		color: white;
+		text-align: center;
+	}
+	.cover {
+		height: 90vh;
+	}
+
 
 }
 
@@ -289,4 +299,5 @@ input[type="search"] {
   label {
     display: none;
   }
+
 }
