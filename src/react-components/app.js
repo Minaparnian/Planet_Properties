@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import HomePage from './HomePage';
 import Navbar from './Navbar';
+import Form from './Form';
 
 
 
@@ -15,6 +16,7 @@ class App extends React.Component {
     return(
       <section>
         <Navbar />
+        <Form />
   		  <HomePage />
       </section>
 
