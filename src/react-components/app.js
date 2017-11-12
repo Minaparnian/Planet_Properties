@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import HomePage from './HomePage';
+import Navbar from './Navbar';
 
 
 
@@ -12,7 +13,11 @@ class App extends React.Component {
 
   render(){
     return(
-		  <HomePage />
+      <section>
+        <Navbar />
+  		  <HomePage />
+      </section>
+
     );
   }
 }

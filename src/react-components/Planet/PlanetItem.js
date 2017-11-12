@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-export default class PlanetItem extends Componet {
+export default class PlanetItem extends Component {
   render(){
     return(
       <div className="planet">

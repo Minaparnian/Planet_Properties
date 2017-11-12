@@ -52,6 +52,8 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+		background: url("http://d2ouvy59p0dg6k.cloudfront.net/img/bjorn_holland_getty__567596.jpg") center center no-repeat;
+		background-size: cover;
 
 }
 
@@ -60,7 +62,7 @@ body, html {
   width: 100%;
   max-width: 1200px;
   margin: 0px auto;
-  padding-top: 80px;
+  padding-top: 70%;
   padding-bottom: 80px;
 }
 
@@ -93,4 +95,86 @@ body, html {
 h2 {
   font-size: 20px;
   font-weight: 500;
+}
+
+
+/*------------------------------ Nav ------------------------------*/
+.navigation {
+  list-style: none;
+  background: transparent;
+  border-bottom: 1px solid grey;
+
+/*change list direction from block to inline*/
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  /*define the flex container's main and cross axes*/
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  /*Push all the list on the right*/
+  justify-content: flex-start;
+  background-attachment: fixed;
+  overflow: hidden;
+
+}
+
+li.left {
+  margin-right: auto;
+
+}
+
+
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  /*height: 80px;*/
+  cursor: pointer;
+
+
+}
+
+.navigation .right:hover {
+  background: #2e3a4d;
+  cursor: pointer;
+
+}
+
+
+/*------------------------------ @media query ------------------------------*/
+@media all and (max-width: 800px) {
+  .navigation {
+    /*when the screen is less than 800px justify list item center and have more space around*/
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .navigation {
+
+    /*wrap the list item block*/
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+    text-align: center;
+  }
+  /*nav have border bottom when width get less than 600px*/
+  .navigation a {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+  li.left {
+    margin-right: inherit;
+
+  }
+
+
 }
