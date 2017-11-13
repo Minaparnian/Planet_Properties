@@ -7,8 +7,11 @@ export default class PlanetItem extends Component {
     super();
     this.state = {
      planetPopupStatus: false
+    
     }
   }
+
+
 
   showPlanetPopup = () => {
      this.setState({planetPopupStatus: true});

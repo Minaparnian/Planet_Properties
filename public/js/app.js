@@ -18697,6 +18697,7 @@ var PlanetItem = function (_Component) {
 
     _this.state = {
       planetPopupStatus: false
+
     };
     return _this;
   }
