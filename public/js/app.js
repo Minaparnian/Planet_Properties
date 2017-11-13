@@ -75,7 +75,7 @@ var EventListener = {
 
 module.exports = EventListener;
 }).call(this,require('_process'))
-},{"./emptyFunction":6,"_process":37}],2:[function(require,module,exports){
+},{"./emptyFunction":6,"_process":38}],2:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -272,7 +272,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = emptyObject;
 }).call(this,require('_process'))
-},{"_process":37}],8:[function(require,module,exports){
+},{"_process":38}],8:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -458,7 +458,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 
 module.exports = invariant;
 }).call(this,require('_process'))
-},{"_process":37}],13:[function(require,module,exports){
+},{"_process":38}],13:[function(require,module,exports){
 'use strict';
 
 /**
@@ -635,7 +635,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = warning;
 }).call(this,require('_process'))
-},{"./emptyFunction":6,"_process":37}],17:[function(require,module,exports){
+},{"./emptyFunction":6,"_process":38}],17:[function(require,module,exports){
 /*
 object-assign
 (c) Sindre Sorhus
@@ -790,7 +790,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 module.exports = checkPropTypes;
 
 }).call(this,require('_process'))
-},{"./lib/ReactPropTypesSecret":19,"_process":37,"fbjs/lib/invariant":12,"fbjs/lib/warning":16}],19:[function(require,module,exports){
+},{"./lib/ReactPropTypesSecret":19,"_process":38,"fbjs/lib/invariant":12,"fbjs/lib/warning":16}],19:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -16166,7 +16166,7 @@ module.exports = reactDom;
 }
 
 }).call(this,require('_process'))
-},{"_process":37,"fbjs/lib/EventListener":1,"fbjs/lib/ExecutionEnvironment":2,"fbjs/lib/camelizeStyleName":4,"fbjs/lib/containsNode":5,"fbjs/lib/emptyFunction":6,"fbjs/lib/emptyObject":7,"fbjs/lib/focusNode":8,"fbjs/lib/getActiveElement":9,"fbjs/lib/hyphenateStyleName":11,"fbjs/lib/invariant":12,"fbjs/lib/shallowEqual":15,"fbjs/lib/warning":16,"object-assign":17,"prop-types/checkPropTypes":18,"react":25}],21:[function(require,module,exports){
+},{"_process":38,"fbjs/lib/EventListener":1,"fbjs/lib/ExecutionEnvironment":2,"fbjs/lib/camelizeStyleName":4,"fbjs/lib/containsNode":5,"fbjs/lib/emptyFunction":6,"fbjs/lib/emptyObject":7,"fbjs/lib/focusNode":8,"fbjs/lib/getActiveElement":9,"fbjs/lib/hyphenateStyleName":11,"fbjs/lib/invariant":12,"fbjs/lib/shallowEqual":15,"fbjs/lib/warning":16,"object-assign":17,"prop-types/checkPropTypes":18,"react":25}],21:[function(require,module,exports){
 /** @license React v16.1.0
  * react-dom.production.min.js
  *
@@ -16437,7 +16437,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 }).call(this,require('_process'))
-},{"./cjs/react-dom.development.js":20,"./cjs/react-dom.production.min.js":21,"_process":37}],23:[function(require,module,exports){
+},{"./cjs/react-dom.development.js":20,"./cjs/react-dom.production.min.js":21,"_process":38}],23:[function(require,module,exports){
 (function (process){
 /** @license React v16.1.0
  * react.development.js
@@ -17784,7 +17784,7 @@ module.exports = react;
 }
 
 }).call(this,require('_process'))
-},{"_process":37,"fbjs/lib/emptyFunction":6,"fbjs/lib/emptyObject":7,"fbjs/lib/invariant":12,"fbjs/lib/warning":16,"object-assign":17,"prop-types/checkPropTypes":18}],24:[function(require,module,exports){
+},{"_process":38,"fbjs/lib/emptyFunction":6,"fbjs/lib/emptyObject":7,"fbjs/lib/invariant":12,"fbjs/lib/warning":16,"object-assign":17,"prop-types/checkPropTypes":18}],24:[function(require,module,exports){
 /** @license React v16.1.0
  * react.production.min.js
  *
@@ -17819,7 +17819,215 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 }).call(this,require('_process'))
-},{"./cjs/react.development.js":23,"./cjs/react.production.min.js":24,"_process":37}],26:[function(require,module,exports){
+},{"./cjs/react.development.js":23,"./cjs/react.production.min.js":24,"_process":38}],26:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var CheckBoxForm = function (_Component) {
+  _inherits(CheckBoxForm, _Component);
+
+  function CheckBoxForm() {
+    _classCallCheck(this, CheckBoxForm);
+
+    var _this = _possibleConstructorReturn(this, (CheckBoxForm.__proto__ || Object.getPrototypeOf(CheckBoxForm)).call(this));
+
+    _this.handleClick = function () {
+      if (_this.state.showBoxForm) {
+        _this.setState({ showBoxForm: false });
+      } else {
+        _this.setState({ showBoxForm: true });
+      }
+    };
+
+    _this.state = {
+      showBoxForm: false
+    };
+    return _this;
+  }
+
+  _createClass(CheckBoxForm, [{
+    key: "renderAdvanceSearch",
+    value: function renderAdvanceSearch() {
+      return _react2.default.createElement(
+        "form",
+        null,
+        _react2.default.createElement(
+          "ul",
+          null,
+          _react2.default.createElement(
+            "li",
+            { className: "list-inline" },
+            _react2.default.createElement(
+              "label",
+              null,
+              "Planet type"
+            ),
+            _react2.default.createElement(
+              "select",
+              { type: "select", className: "select-box" },
+              _react2.default.createElement(
+                "option",
+                null,
+                "Rock"
+              ),
+              _react2.default.createElement(
+                "option",
+                null,
+                "Gas"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "li",
+            { className: "list-inline" },
+            _react2.default.createElement(
+              "label",
+              null,
+              "Price min"
+            ),
+            _react2.default.createElement(
+              "select",
+              { type: "select", className: "select-box" },
+              _react2.default.createElement(
+                "option",
+                null,
+                "Any"
+              ),
+              _react2.default.createElement(
+                "option",
+                null,
+                "10,000"
+              ),
+              _react2.default.createElement(
+                "option",
+                null,
+                "100,000"
+              ),
+              _react2.default.createElement(
+                "option",
+                null,
+                "1,000,000"
+              ),
+              _react2.default.createElement(
+                "option",
+                null,
+                "10,000,000"
+              ),
+              _react2.default.createElement(
+                "option",
+                null,
+                "100,000,000"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "li",
+            { className: "list-inline" },
+            _react2.default.createElement(
+              "label",
+              null,
+              "Price max"
+            ),
+            _react2.default.createElement(
+              "select",
+              { type: "select", className: "select-box" },
+              _react2.default.createElement(
+                "option",
+                null,
+                "Any"
+              ),
+              _react2.default.createElement(
+                "option",
+                null,
+                "10,000"
+              ),
+              _react2.default.createElement(
+                "option",
+                null,
+                "100,000"
+              ),
+              _react2.default.createElement(
+                "option",
+                null,
+                "1,000,000"
+              ),
+              _react2.default.createElement(
+                "option",
+                null,
+                "10,000,000"
+              ),
+              _react2.default.createElement(
+                "option",
+                null,
+                "100,000,000"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "li",
+            { className: "list-inline" },
+            _react2.default.createElement(
+              "label",
+              null,
+              "Water availability"
+            ),
+            _react2.default.createElement(
+              "select",
+              { type: "select", className: "select-box" },
+              _react2.default.createElement(
+                "option",
+                null,
+                "Yes"
+              ),
+              _react2.default.createElement(
+                "option",
+                null,
+                "No"
+              )
+            )
+          )
+        )
+      );
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "section",
+        null,
+        _react2.default.createElement(
+          "a",
+          { href: "#", onClick: this.handleClick, ref: "profilebtn" },
+          "Advance Search"
+        ),
+        this.state.showBoxForm ? this.renderAdvanceSearch() : null
+      );
+    }
+  }]);
+
+  return CheckBoxForm;
+}(_react.Component);
+
+exports.default = CheckBoxForm;
+
+},{"react":25}],27:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -17831,6 +18039,10 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
+
+var _CheckBoxForm = require('./CheckBoxForm');
+
+var _CheckBoxForm2 = _interopRequireDefault(_CheckBoxForm);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17868,150 +18080,6 @@ var Form = function (_Component) {
       var query = this.state.query;
     }
   }, {
-    key: 'renderAdvanceSearch',
-    value: function renderAdvanceSearch() {
-      return _react2.default.createElement(
-        'form',
-        null,
-        _react2.default.createElement(
-          'ul',
-          null,
-          _react2.default.createElement(
-            'li',
-            { className: 'list-inline' },
-            _react2.default.createElement(
-              'label',
-              null,
-              'Planet type'
-            ),
-            _react2.default.createElement(
-              'select',
-              { type: 'select', className: 'select-box' },
-              _react2.default.createElement(
-                'option',
-                null,
-                'Rock'
-              ),
-              _react2.default.createElement(
-                'option',
-                null,
-                'Gas'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'list-inline' },
-            _react2.default.createElement(
-              'label',
-              null,
-              'Price min'
-            ),
-            _react2.default.createElement(
-              'select',
-              { type: 'select', className: 'select-box' },
-              _react2.default.createElement(
-                'option',
-                null,
-                'Any'
-              ),
-              _react2.default.createElement(
-                'option',
-                null,
-                '10,000'
-              ),
-              _react2.default.createElement(
-                'option',
-                null,
-                '100,000'
-              ),
-              _react2.default.createElement(
-                'option',
-                null,
-                '1,000,000'
-              ),
-              _react2.default.createElement(
-                'option',
-                null,
-                '10,000,000'
-              ),
-              _react2.default.createElement(
-                'option',
-                null,
-                '100,000,000'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'list-inline' },
-            _react2.default.createElement(
-              'label',
-              null,
-              'Price max'
-            ),
-            _react2.default.createElement(
-              'select',
-              { type: 'select', className: 'select-box' },
-              _react2.default.createElement(
-                'option',
-                null,
-                'Any'
-              ),
-              _react2.default.createElement(
-                'option',
-                null,
-                '10,000'
-              ),
-              _react2.default.createElement(
-                'option',
-                null,
-                '100,000'
-              ),
-              _react2.default.createElement(
-                'option',
-                null,
-                '1,000,000'
-              ),
-              _react2.default.createElement(
-                'option',
-                null,
-                '10,000,000'
-              ),
-              _react2.default.createElement(
-                'option',
-                null,
-                '100,000,000'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'list-inline' },
-            _react2.default.createElement(
-              'label',
-              null,
-              'Water availability'
-            ),
-            _react2.default.createElement(
-              'select',
-              { type: 'select', className: 'select-box' },
-              _react2.default.createElement(
-                'option',
-                null,
-                'Yes'
-              ),
-              _react2.default.createElement(
-                'option',
-                null,
-                'No'
-              )
-            )
-          )
-        )
-      );
-    }
-  }, {
     key: 'renderForm',
     value: function renderForm() {
       return _react2.default.createElement(
@@ -18043,7 +18111,7 @@ var Form = function (_Component) {
             'div',
             { className: 'form-box' },
             this.renderForm(),
-            this.renderAdvanceSearch()
+            _react2.default.createElement(_CheckBoxForm2.default, null)
           )
         )
       );
@@ -18055,7 +18123,7 @@ var Form = function (_Component) {
 
 exports.default = Form;
 
-},{"react":25}],27:[function(require,module,exports){
+},{"./CheckBoxForm":26,"react":25}],28:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18206,7 +18274,7 @@ var HomePage = function (_Component) {
 
 exports.default = HomePage;
 
-},{"../Planet/PlanetList":33,"react":25}],28:[function(require,module,exports){
+},{"../Planet/PlanetList":34,"react":25}],29:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18347,7 +18415,7 @@ var LoginPopup = function (_Component) {
 
 exports.default = LoginPopup;
 
-},{"./Popup":29,"react":25}],29:[function(require,module,exports){
+},{"./Popup":30,"react":25}],30:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18415,7 +18483,7 @@ var Popup = function (_Component) {
 
 exports.default = Popup;
 
-},{"react":25}],30:[function(require,module,exports){
+},{"react":25}],31:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18551,7 +18619,7 @@ var LoginPopup = function (_Component) {
 
 exports.default = LoginPopup;
 
-},{"./Popup":29,"react":25}],31:[function(require,module,exports){
+},{"./Popup":30,"react":25}],32:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18654,7 +18722,7 @@ var Navbar = function (_Component) {
 
 exports.default = Navbar;
 
-},{"./LoginPopup":28,"./SignupPopup":30,"react":25}],32:[function(require,module,exports){
+},{"./LoginPopup":29,"./SignupPopup":31,"react":25}],33:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18818,7 +18886,7 @@ var PlanetItem = function (_Component) {
 
 exports.default = PlanetItem;
 
-},{"./PlanetPopup":34,"react":25}],33:[function(require,module,exports){
+},{"./PlanetPopup":35,"react":25}],34:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18872,7 +18940,7 @@ var PlanetList = function (_Component) {
 
 exports.default = PlanetList;
 
-},{"./PlanetItem":32,"react":25}],34:[function(require,module,exports){
+},{"./PlanetItem":33,"react":25}],35:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18947,7 +19015,7 @@ var PlanetPopup = function (_Component) {
 
 exports.default = PlanetPopup;
 
-},{"./PopupPlanet":35,"react":25}],35:[function(require,module,exports){
+},{"./PopupPlanet":36,"react":25}],36:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19015,7 +19083,7 @@ var PopupPlanet = function (_Component) {
 
 exports.default = PopupPlanet;
 
-},{"react":25}],36:[function(require,module,exports){
+},{"react":25}],37:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -19075,7 +19143,7 @@ var App = function (_React$Component) {
 
 _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('root'));
 
-},{"./Form":26,"./HomePage":27,"./Navbar":31,"react":25,"react-dom":22}],37:[function(require,module,exports){
+},{"./Form":27,"./HomePage":28,"./Navbar":32,"react":25,"react-dom":22}],38:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -19261,4 +19329,4 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}]},{},[36]);
+},{}]},{},[37]);
