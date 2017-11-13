@@ -75,7 +75,7 @@ var EventListener = {
 
 module.exports = EventListener;
 }).call(this,require('_process'))
-},{"./emptyFunction":6,"_process":36}],2:[function(require,module,exports){
+},{"./emptyFunction":6,"_process":37}],2:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -272,7 +272,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = emptyObject;
 }).call(this,require('_process'))
-},{"_process":36}],8:[function(require,module,exports){
+},{"_process":37}],8:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -458,7 +458,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 
 module.exports = invariant;
 }).call(this,require('_process'))
-},{"_process":36}],13:[function(require,module,exports){
+},{"_process":37}],13:[function(require,module,exports){
 'use strict';
 
 /**
@@ -635,7 +635,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = warning;
 }).call(this,require('_process'))
-},{"./emptyFunction":6,"_process":36}],17:[function(require,module,exports){
+},{"./emptyFunction":6,"_process":37}],17:[function(require,module,exports){
 /*
 object-assign
 (c) Sindre Sorhus
@@ -790,7 +790,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 module.exports = checkPropTypes;
 
 }).call(this,require('_process'))
-},{"./lib/ReactPropTypesSecret":19,"_process":36,"fbjs/lib/invariant":12,"fbjs/lib/warning":16}],19:[function(require,module,exports){
+},{"./lib/ReactPropTypesSecret":19,"_process":37,"fbjs/lib/invariant":12,"fbjs/lib/warning":16}],19:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -16166,7 +16166,7 @@ module.exports = reactDom;
 }
 
 }).call(this,require('_process'))
-},{"_process":36,"fbjs/lib/EventListener":1,"fbjs/lib/ExecutionEnvironment":2,"fbjs/lib/camelizeStyleName":4,"fbjs/lib/containsNode":5,"fbjs/lib/emptyFunction":6,"fbjs/lib/emptyObject":7,"fbjs/lib/focusNode":8,"fbjs/lib/getActiveElement":9,"fbjs/lib/hyphenateStyleName":11,"fbjs/lib/invariant":12,"fbjs/lib/shallowEqual":15,"fbjs/lib/warning":16,"object-assign":17,"prop-types/checkPropTypes":18,"react":25}],21:[function(require,module,exports){
+},{"_process":37,"fbjs/lib/EventListener":1,"fbjs/lib/ExecutionEnvironment":2,"fbjs/lib/camelizeStyleName":4,"fbjs/lib/containsNode":5,"fbjs/lib/emptyFunction":6,"fbjs/lib/emptyObject":7,"fbjs/lib/focusNode":8,"fbjs/lib/getActiveElement":9,"fbjs/lib/hyphenateStyleName":11,"fbjs/lib/invariant":12,"fbjs/lib/shallowEqual":15,"fbjs/lib/warning":16,"object-assign":17,"prop-types/checkPropTypes":18,"react":25}],21:[function(require,module,exports){
 /** @license React v16.1.0
  * react-dom.production.min.js
  *
@@ -16437,7 +16437,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 }).call(this,require('_process'))
-},{"./cjs/react-dom.development.js":20,"./cjs/react-dom.production.min.js":21,"_process":36}],23:[function(require,module,exports){
+},{"./cjs/react-dom.development.js":20,"./cjs/react-dom.production.min.js":21,"_process":37}],23:[function(require,module,exports){
 (function (process){
 /** @license React v16.1.0
  * react.development.js
@@ -17784,7 +17784,7 @@ module.exports = react;
 }
 
 }).call(this,require('_process'))
-},{"_process":36,"fbjs/lib/emptyFunction":6,"fbjs/lib/emptyObject":7,"fbjs/lib/invariant":12,"fbjs/lib/warning":16,"object-assign":17,"prop-types/checkPropTypes":18}],24:[function(require,module,exports){
+},{"_process":37,"fbjs/lib/emptyFunction":6,"fbjs/lib/emptyObject":7,"fbjs/lib/invariant":12,"fbjs/lib/warning":16,"object-assign":17,"prop-types/checkPropTypes":18}],24:[function(require,module,exports){
 /** @license React v16.1.0
  * react.production.min.js
  *
@@ -17819,7 +17819,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 }).call(this,require('_process'))
-},{"./cjs/react.development.js":23,"./cjs/react.production.min.js":24,"_process":36}],26:[function(require,module,exports){
+},{"./cjs/react.development.js":23,"./cjs/react.production.min.js":24,"_process":37}],26:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -17942,34 +17942,82 @@ var HomePage = function (_Component) {
       PlanetList: [{
         id: 1,
         name: 'Mercury',
+        lengthOfTheDay: '58d 15h 30m',
+        distanceFromSun: '57.91 million km',
+        averageTemp: '176C',
+        water: 'No',
+        madeOf: 'Rock',
+        surfaceArea: '74.8 million km²',
         media: '/img/Planet_Mercury.jpg'
       }, {
         id: 2,
         name: 'Venus',
+        lengthOfTheDay: '116d 18h 0m',
+        distanceFromSun: '108.2 million km',
+        averageTemp: '462C',
+        water: 'No',
+        madeOf: 'Rock',
+        surfaceArea: '460.2 million km²',
         media: '/img/venus.png'
       }, {
         id: 3,
         name: 'Earth',
+        lengthOfTheDay: '24h',
+        distanceFromSun: '149.6 million km',
+        averageTemp: '16C',
+        water: 'Yes',
+        madeOf: 'Rock',
+        surfaceArea: '510.1 million km²',
         media: '/img/4-earth.jpg'
       }, {
         id: 4,
         name: 'Mars',
+        lengthOfTheDay: '1d 0h 40m',
+        distanceFromSun: '227.9 million km',
+        averageTemp: '-60C',
+        water: 'Yes',
+        madeOf: 'Rock',
+        surfaceArea: '144.8 million km²',
         media: '/img/mars8small.gif'
       }, {
         id: 5,
         name: 'Jupitar',
+        lengthOfTheDay: '0d 9h 56m',
+        distanceFromSun: '778.5 million km',
+        averageTemp: '-145C',
+        water: 'Yes',
+        madeOf: 'Gas',
+        surfaceArea: '61.42 billion km²',
         media: '/img/Jupiter.jpg'
       }, {
         id: 6,
         name: 'Saturn',
+        lengthOfTheDay: '0d 10h 42m',
+        distanceFromSun: '1.429 billion km',
+        averageTemp: '-178C',
+        water: 'Yes',
+        madeOf: 'Gas',
+        surfaceArea: '42.7 billion km²',
         media: '/img/Saturn.JPG'
       }, {
         id: 7,
         name: 'Uranus',
+        lengthOfTheDay: '0d 17h 14m',
+        distanceFromSun: '2.871 billion km',
+        averageTemp: '-216C',
+        water: 'Yes',
+        madeOf: 'Gas',
+        surfaceArea: '8.083 billion km²',
         media: '/img/Uranus.png'
       }, {
         id: 8,
         name: 'Neptune',
+        lengthOfTheDay: '0d 16h 6m',
+        distanceFromSun: '4.498 billion km',
+        averageTemp: '-214C',
+        water: 'Yes',
+        madeOf: 'Gas',
+        surfaceArea: '7.618 billion km²',
         media: '/img/neptune.jpg'
       }]
     };
@@ -18000,7 +18048,7 @@ var HomePage = function (_Component) {
 
 exports.default = HomePage;
 
-},{"../Planet/PlanetList":33,"react":25}],28:[function(require,module,exports){
+},{"../Planet/PlanetList":34,"react":25}],28:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18179,7 +18227,7 @@ var Popup = function (_Component) {
         { className: "popup" },
         _react2.default.createElement(
           "section",
-          { className: "popup-wrap" },
+          { className: "popup-wrap", id: "popup-wrap-planet" },
           _react2.default.createElement("img", { src: "/img/close1.png", onClick: this.props.hidePopup })
         ),
         _react2.default.createElement(
@@ -18210,6 +18258,74 @@ var Popup = function (_Component) {
 exports.default = Popup;
 
 },{"react":25}],30:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var PopupPlanet = function (_Component) {
+  _inherits(PopupPlanet, _Component);
+
+  function PopupPlanet() {
+    _classCallCheck(this, PopupPlanet);
+
+    return _possibleConstructorReturn(this, (PopupPlanet.__proto__ || Object.getPrototypeOf(PopupPlanet)).apply(this, arguments));
+  }
+
+  _createClass(PopupPlanet, [{
+    key: "renderPopup",
+    value: function renderPopup() {
+      return _react2.default.createElement(
+        "section",
+        { className: "popup-planet" },
+        _react2.default.createElement(
+          "section",
+          { className: "popup-wrap-planet" },
+          _react2.default.createElement("img", { src: "/img/close1.png", onClick: this.props.hidePopup })
+        ),
+        _react2.default.createElement(
+          "section",
+          { className: "popup-content-planet " + this.props.style },
+          _react2.default.createElement(
+            "section",
+            null,
+            this.props.children
+          )
+        )
+      );
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "section",
+        null,
+        this.props.status ? this.renderPopup() : null
+      );
+    }
+  }]);
+
+  return PopupPlanet;
+}(_react.Component);
+
+exports.default = PopupPlanet;
+
+},{"react":25}],31:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18345,7 +18461,7 @@ var LoginPopup = function (_Component) {
 
 exports.default = LoginPopup;
 
-},{"./Popup":29,"react":25}],31:[function(require,module,exports){
+},{"./Popup":29,"react":25}],32:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18448,7 +18564,7 @@ var Navbar = function (_Component) {
 
 exports.default = Navbar;
 
-},{"./LoginPopup":28,"./SignupPopup":30,"react":25}],32:[function(require,module,exports){
+},{"./LoginPopup":28,"./SignupPopup":31,"react":25}],33:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18521,7 +18637,7 @@ var PlanetItem = function (_Component) {
 
 exports.default = PlanetItem;
 
-},{"./PlanetPopup":34,"react":25}],33:[function(require,module,exports){
+},{"./PlanetPopup":35,"react":25}],34:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18575,12 +18691,14 @@ var PlanetList = function (_Component) {
 
 exports.default = PlanetList;
 
-},{"./PlanetItem":32,"react":25}],34:[function(require,module,exports){
+},{"./PlanetItem":33,"react":25}],35:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -18588,9 +18706,9 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Popup = require('../Navbar/Popup');
+var _PopupPlanet = require('../Navbar/PopupPlanet');
 
-var _Popup2 = _interopRequireDefault(_Popup);
+var _PopupPlanet2 = _interopRequireDefault(_PopupPlanet);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18606,20 +18724,105 @@ var PlanetPopup = function (_Component) {
   function PlanetPopup() {
     _classCallCheck(this, PlanetPopup);
 
-    return _possibleConstructorReturn(this, (PlanetPopup.__proto__ || Object.getPrototypeOf(PlanetPopup)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (PlanetPopup.__proto__ || Object.getPrototypeOf(PlanetPopup)).call(this));
+
+    _this.state = {
+      Planet: {
+        id: 1,
+        name: 'Mercury',
+        lengthOfTheDay: '58d 15h 30m',
+        distanceFromSun: '57.91 million km',
+        averageTemp: '176C',
+        water: 'No',
+        madeOf: 'Rock',
+        surfaceArea: '74.8 million km²',
+        media: '/img/Mercury-big.jpg',
+        price: '$1,234,000'
+
+      }
+    };
+    return _this;
   }
 
   _createClass(PlanetPopup, [{
+    key: 'renderPlanetInfo',
+    value: function renderPlanetInfo() {
+      return _react2.default.createElement(
+        'header',
+        null,
+        _react2.default.createElement(
+          'section',
+          { className: 'header-shadow' },
+          _react2.default.createElement(
+            'h1',
+            { className: 'planet-pop-title' },
+            this.state.Planet.name
+          ),
+          _react2.default.createElement(
+            'section',
+            null,
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                { className: 'planet-list' },
+                'length Of The Day:',
+                this.state.Planet.lengthOfTheDay
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'planet-list' },
+                ' distance From Sun:',
+                this.state.Planet.distanceFromSun
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'planet-list' },
+                ' average Temp:',
+                this.state.Planet.averageTemp
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'planet-list' },
+                'water:',
+                this.state.Planet.water
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'planet-list' },
+                'surface Area:',
+                this.state.Planet.surfaceArea
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'planet-list' },
+                'madeOf:',
+                this.state.Planet.madeOf
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'planet-list' },
+                'Price:',
+                this.state.Planet.price
+              )
+            ),
+            _react2.default.createElement(
+              'button',
+              { className: 'buy' },
+              'BUY'
+            )
+          )
+        )
+      );
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        _Popup2.default,
-        this.props,
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Planet info here'
-        )
+        _PopupPlanet2.default,
+        _extends({}, this.props, { style: 'planet-popup' }),
+        this.renderPlanetInfo()
       );
     }
   }]);
@@ -18629,7 +18832,7 @@ var PlanetPopup = function (_Component) {
 
 exports.default = PlanetPopup;
 
-},{"../Navbar/Popup":29,"react":25}],35:[function(require,module,exports){
+},{"../Navbar/PopupPlanet":30,"react":25}],36:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -18689,7 +18892,7 @@ var App = function (_React$Component) {
 
 _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('root'));
 
-},{"./Form":26,"./HomePage":27,"./Navbar":31,"react":25,"react-dom":22}],36:[function(require,module,exports){
+},{"./Form":26,"./HomePage":27,"./Navbar":32,"react":25,"react-dom":22}],37:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -18875,4 +19078,4 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}]},{},[35]);
+},{}]},{},[36]);

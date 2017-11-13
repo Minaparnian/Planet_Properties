@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-export default class Popup extends Component {
-   renderPopupContent() {
+export default class PopupPlanet extends Component {
+   renderPopup() {
      return(
-       <section className="popup">
-         <section className="popup-wrap" id="popup-wrap-planet">
+       <section className="popup-planet">
+         <section className="popup-wrap-planet">
            <img src="/img/close1.png" onClick={this.props.hidePopup}/>
          </section>
-         <section className={"popup-content " + this.props.style}>
+         <section className={"popup-content-planet " + this.props.style}>
            <section>{this.props.children}</section>
          </section>
 
@@ -21,7 +21,7 @@ export default class Popup extends Component {
     return(
       <section>
         {
-          this.props.status? this.renderPopupContent() : null
+          this.props.status? this.renderPopup() : null
         }
       </section>
     );
