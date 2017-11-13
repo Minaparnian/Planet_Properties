@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PlanetList from '../Planet/PlanetList';
 
 
+
 export default class HomePage extends Component {
   constructor() {
     super();
@@ -16,7 +17,8 @@ export default class HomePage extends Component {
           water: 'No',
           madeOf: 'Rock',
           surfaceArea: '74.8 million km²',
-          media: '/img/Planet_Mercury.jpg'
+          media: '/img/Planet_Mercury.jpg',
+          price: '$1,234,000'
         },
         {
           id: 2,
@@ -27,7 +29,8 @@ export default class HomePage extends Component {
           water: 'No',
           madeOf: 'Rock',
           surfaceArea: '460.2 million km²',
-          media: '/img/venus.png'
+          media: '/img/venus.png',
+          price: '$3,534,000'
         },
         {
           id: 3,
@@ -38,7 +41,8 @@ export default class HomePage extends Component {
           water: 'Yes',
           madeOf: 'Rock',
           surfaceArea: '510.1 million km²',
-          media: '/img/4-earth.jpg'
+          media: '/img/4-earth.jpg',
+          price: '$5,895,000'
         },
         {
           id: 4,
@@ -49,7 +53,8 @@ export default class HomePage extends Component {
           water: 'Yes',
           madeOf: 'Rock',
           surfaceArea: '144.8 million km²',
-          media: '/img/mars8small.gif'
+          media: '/img/mars8small.gif',
+          price: '$1,234,000'
         },
         {
           id: 5,
@@ -60,7 +65,8 @@ export default class HomePage extends Component {
           water: 'Yes',
           madeOf: 'Gas',
           surfaceArea: '61.42 billion km²',
-          media: '/img/Jupiter.jpg'
+          media: '/img/Jupiter.jpg',
+          price: '$4,000'
         },
         {
           id: 6,
@@ -71,7 +77,8 @@ export default class HomePage extends Component {
           water: 'Yes',
           madeOf: 'Gas',
           surfaceArea: '42.7 billion km²',
-          media: '/img/Saturn.JPG'
+          media: '/img/Saturn.JPG',
+          price: '$3s,000'
         },
         {
           id: 7,
@@ -82,7 +89,8 @@ export default class HomePage extends Component {
           water: 'Yes',
           madeOf: 'Gas',
           surfaceArea: '8.083 billion km²',
-          media: '/img/Uranus.png'
+          media: '/img/Uranus.png',
+          price: '$2,000'
         },
         {
           id: 8,
@@ -93,7 +101,8 @@ export default class HomePage extends Component {
           water: 'Yes',
           madeOf: 'Gas',
           surfaceArea: '7.618 billion km²',
-          media: '/img/neptune.jpg'
+          media: '/img/neptune.jpg',
+          price: '$1,000'
         },
       ]
     }
@@ -106,6 +115,7 @@ export default class HomePage extends Component {
           <section className="container">
             <PlanetList PlanetList={this.state.PlanetList}/>
           </section>
+          
         </section>
 
       </section>

@@ -17948,7 +17948,8 @@ var HomePage = function (_Component) {
         water: 'No',
         madeOf: 'Rock',
         surfaceArea: '74.8 million km²',
-        media: '/img/Planet_Mercury.jpg'
+        media: '/img/Planet_Mercury.jpg',
+        price: '$1,234,000'
       }, {
         id: 2,
         name: 'Venus',
@@ -17958,7 +17959,8 @@ var HomePage = function (_Component) {
         water: 'No',
         madeOf: 'Rock',
         surfaceArea: '460.2 million km²',
-        media: '/img/venus.png'
+        media: '/img/venus.png',
+        price: '$3,534,000'
       }, {
         id: 3,
         name: 'Earth',
@@ -17968,7 +17970,8 @@ var HomePage = function (_Component) {
         water: 'Yes',
         madeOf: 'Rock',
         surfaceArea: '510.1 million km²',
-        media: '/img/4-earth.jpg'
+        media: '/img/4-earth.jpg',
+        price: '$5,895,000'
       }, {
         id: 4,
         name: 'Mars',
@@ -17978,7 +17981,8 @@ var HomePage = function (_Component) {
         water: 'Yes',
         madeOf: 'Rock',
         surfaceArea: '144.8 million km²',
-        media: '/img/mars8small.gif'
+        media: '/img/mars8small.gif',
+        price: '$1,234,000'
       }, {
         id: 5,
         name: 'Jupitar',
@@ -17988,7 +17992,8 @@ var HomePage = function (_Component) {
         water: 'Yes',
         madeOf: 'Gas',
         surfaceArea: '61.42 billion km²',
-        media: '/img/Jupiter.jpg'
+        media: '/img/Jupiter.jpg',
+        price: '$4,000'
       }, {
         id: 6,
         name: 'Saturn',
@@ -17998,7 +18003,8 @@ var HomePage = function (_Component) {
         water: 'Yes',
         madeOf: 'Gas',
         surfaceArea: '42.7 billion km²',
-        media: '/img/Saturn.JPG'
+        media: '/img/Saturn.JPG',
+        price: '$3s,000'
       }, {
         id: 7,
         name: 'Uranus',
@@ -18008,7 +18014,8 @@ var HomePage = function (_Component) {
         water: 'Yes',
         madeOf: 'Gas',
         surfaceArea: '8.083 billion km²',
-        media: '/img/Uranus.png'
+        media: '/img/Uranus.png',
+        price: '$2,000'
       }, {
         id: 8,
         name: 'Neptune',
@@ -18018,7 +18025,8 @@ var HomePage = function (_Component) {
         water: 'Yes',
         madeOf: 'Gas',
         surfaceArea: '7.618 billion km²',
-        media: '/img/neptune.jpg'
+        media: '/img/neptune.jpg',
+        price: '$1,000'
       }]
     };
     return _this;
@@ -18048,7 +18056,7 @@ var HomePage = function (_Component) {
 
 exports.default = HomePage;
 
-},{"../Planet/PlanetList":34,"react":25}],28:[function(require,module,exports){
+},{"../Planet/PlanetList":33,"react":25}],28:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18258,74 +18266,6 @@ var Popup = function (_Component) {
 exports.default = Popup;
 
 },{"react":25}],30:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = require("react");
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var PopupPlanet = function (_Component) {
-  _inherits(PopupPlanet, _Component);
-
-  function PopupPlanet() {
-    _classCallCheck(this, PopupPlanet);
-
-    return _possibleConstructorReturn(this, (PopupPlanet.__proto__ || Object.getPrototypeOf(PopupPlanet)).apply(this, arguments));
-  }
-
-  _createClass(PopupPlanet, [{
-    key: "renderPopup",
-    value: function renderPopup() {
-      return _react2.default.createElement(
-        "section",
-        { className: "popup-planet" },
-        _react2.default.createElement(
-          "section",
-          { className: "popup-wrap-planet" },
-          _react2.default.createElement("img", { src: "/img/close1.png", onClick: this.props.hidePopup })
-        ),
-        _react2.default.createElement(
-          "section",
-          { className: "popup-content-planet " + this.props.style },
-          _react2.default.createElement(
-            "section",
-            null,
-            this.props.children
-          )
-        )
-      );
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "section",
-        null,
-        this.props.status ? this.renderPopup() : null
-      );
-    }
-  }]);
-
-  return PopupPlanet;
-}(_react.Component);
-
-exports.default = PopupPlanet;
-
-},{"react":25}],31:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18461,7 +18401,7 @@ var LoginPopup = function (_Component) {
 
 exports.default = LoginPopup;
 
-},{"./Popup":29,"react":25}],32:[function(require,module,exports){
+},{"./Popup":29,"react":25}],31:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18564,7 +18504,7 @@ var Navbar = function (_Component) {
 
 exports.default = Navbar;
 
-},{"./LoginPopup":28,"./SignupPopup":31,"react":25}],33:[function(require,module,exports){
+},{"./LoginPopup":28,"./SignupPopup":30,"react":25}],32:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18637,7 +18577,7 @@ var PlanetItem = function (_Component) {
 
 exports.default = PlanetItem;
 
-},{"./PlanetPopup":35,"react":25}],34:[function(require,module,exports){
+},{"./PlanetPopup":34,"react":25}],33:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18691,7 +18631,7 @@ var PlanetList = function (_Component) {
 
 exports.default = PlanetList;
 
-},{"./PlanetItem":33,"react":25}],35:[function(require,module,exports){
+},{"./PlanetItem":32,"react":25}],34:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18706,7 +18646,7 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _PopupPlanet = require('../Navbar/PopupPlanet');
+var _PopupPlanet = require('./PopupPlanet');
 
 var _PopupPlanet2 = _interopRequireDefault(_PopupPlanet);
 
@@ -18727,7 +18667,7 @@ var PlanetPopup = function (_Component) {
     var _this = _possibleConstructorReturn(this, (PlanetPopup.__proto__ || Object.getPrototypeOf(PlanetPopup)).call(this));
 
     _this.state = {
-      Planet: {
+      Planet: [{
         id: 1,
         name: 'Mercury',
         lengthOfTheDay: '58d 15h 30m',
@@ -18738,8 +18678,18 @@ var PlanetPopup = function (_Component) {
         surfaceArea: '74.8 million km²',
         media: '/img/Mercury-big.jpg',
         price: '$1,234,000'
-
-      }
+      }, {
+        id: 2,
+        name: 'Venus',
+        lengthOfTheDay: '116d 18h 0m',
+        distanceFromSun: '108.2 million km',
+        averageTemp: '462C',
+        water: 'No',
+        madeOf: 'Rock',
+        surfaceArea: '460.2 million km²',
+        media: '/img/venus.png',
+        price: '$3,534,000'
+      }]
     };
     return _this;
   }
@@ -18756,7 +18706,7 @@ var PlanetPopup = function (_Component) {
           _react2.default.createElement(
             'h1',
             { className: 'planet-pop-title' },
-            this.state.Planet.name
+            this.state.Planet[0].name
           ),
           _react2.default.createElement(
             'section',
@@ -18767,50 +18717,50 @@ var PlanetPopup = function (_Component) {
               _react2.default.createElement(
                 'li',
                 { className: 'planet-list' },
-                'length Of The Day:',
-                this.state.Planet.lengthOfTheDay
+                'Length Of The Day:',
+                this.state.Planet[0].lengthOfTheDay
               ),
               _react2.default.createElement(
                 'li',
                 { className: 'planet-list' },
-                ' distance From Sun:',
-                this.state.Planet.distanceFromSun
+                ' Distance From Sun:',
+                this.state.Planet[0].distanceFromSun
               ),
               _react2.default.createElement(
                 'li',
                 { className: 'planet-list' },
-                ' average Temp:',
-                this.state.Planet.averageTemp
+                ' Average Temp:',
+                this.state.Planet[0].averageTemp
               ),
               _react2.default.createElement(
                 'li',
                 { className: 'planet-list' },
-                'water:',
-                this.state.Planet.water
+                'Water:',
+                this.state.Planet[0].water
               ),
               _react2.default.createElement(
                 'li',
                 { className: 'planet-list' },
-                'surface Area:',
-                this.state.Planet.surfaceArea
+                'Surface Area:',
+                this.state.Planet[0].surfaceArea
               ),
               _react2.default.createElement(
                 'li',
                 { className: 'planet-list' },
-                'madeOf:',
-                this.state.Planet.madeOf
+                'MadeOf:',
+                this.state.Planet[0].madeOf
               ),
               _react2.default.createElement(
                 'li',
                 { className: 'planet-list' },
                 'Price:',
-                this.state.Planet.price
+                this.state.Planet[0].price
               )
             ),
             _react2.default.createElement(
               'button',
               { className: 'buy' },
-              'BUY'
+              'Buy'
             )
           )
         )
@@ -18832,7 +18782,75 @@ var PlanetPopup = function (_Component) {
 
 exports.default = PlanetPopup;
 
-},{"../Navbar/PopupPlanet":30,"react":25}],36:[function(require,module,exports){
+},{"./PopupPlanet":35,"react":25}],35:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var PopupPlanet = function (_Component) {
+  _inherits(PopupPlanet, _Component);
+
+  function PopupPlanet() {
+    _classCallCheck(this, PopupPlanet);
+
+    return _possibleConstructorReturn(this, (PopupPlanet.__proto__ || Object.getPrototypeOf(PopupPlanet)).apply(this, arguments));
+  }
+
+  _createClass(PopupPlanet, [{
+    key: "renderPopup",
+    value: function renderPopup() {
+      return _react2.default.createElement(
+        "section",
+        { className: "popup-planet" },
+        _react2.default.createElement(
+          "section",
+          { className: "popup-wrap-planet" },
+          _react2.default.createElement("img", { src: "/img/close1.png", onClick: this.props.hidePopup })
+        ),
+        _react2.default.createElement(
+          "section",
+          { className: "popup-content-planet " + this.props.style },
+          _react2.default.createElement(
+            "section",
+            null,
+            this.props.children
+          )
+        )
+      );
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "section",
+        null,
+        this.props.status ? this.renderPopup() : null
+      );
+    }
+  }]);
+
+  return PopupPlanet;
+}(_react.Component);
+
+exports.default = PopupPlanet;
+
+},{"react":25}],36:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -18892,7 +18910,7 @@ var App = function (_React$Component) {
 
 _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('root'));
 
-},{"./Form":26,"./HomePage":27,"./Navbar":32,"react":25,"react-dom":22}],37:[function(require,module,exports){
+},{"./Form":26,"./HomePage":27,"./Navbar":31,"react":25,"react-dom":22}],37:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
