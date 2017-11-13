@@ -33,8 +33,9 @@ export default class Form extends Component {
 
                 <input type="search" placeholder="Search by name of planet" value={this.state.query} onChange={this._handleChange} />
                 <input type="submit" value="Search" />
-                <input type="submit" value="Advance Search" />
+              
             </form>
+
             <form>
 
                <ul>

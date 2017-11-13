@@ -17892,8 +17892,7 @@ var Form = function (_Component) {
               'form',
               { onSubmit: this._handleSubmit, className: 'flex-form' },
               _react2.default.createElement('input', { type: 'search', placeholder: 'Search by name of planet', value: this.state.query, onChange: this._handleChange }),
-              _react2.default.createElement('input', { type: 'submit', value: 'Search' }),
-              _react2.default.createElement('input', { type: 'submit', value: 'Advance Search' })
+              _react2.default.createElement('input', { type: 'submit', value: 'Search' })
             ),
             _react2.default.createElement(
               'form',
