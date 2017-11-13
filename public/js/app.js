@@ -18184,8 +18184,12 @@ var Popup = function (_Component) {
         ),
         _react2.default.createElement(
           "section",
-          { className: "popup-content" },
-          this.props.children
+          { className: "popup-content " + this.props.style },
+          _react2.default.createElement(
+            "section",
+            null,
+            this.props.children
+          )
         )
       );
     }
@@ -18497,8 +18501,17 @@ var PlanetItem = function (_Component) {
       return _react2.default.createElement(
         'div',
         { className: 'planet' },
-        _react2.default.createElement('img', { className: 'img', src: this.props.media, onClick: this.showPlanetPopup() }),
-        _react2.default.createElement(_PlanetPopup2.default, { status: this.state.PlanetPopupStatus, hidePopup: this.hidePlanetPopup })
+        _react2.default.createElement('img', { className: 'img', src: this.props.media }),
+        _react2.default.createElement(
+          'a',
+          { href: '#', onClick: this.showPlanetPopup },
+          _react2.default.createElement(
+            'h2',
+            null,
+            this.props.name
+          )
+        ),
+        _react2.default.createElement(_PlanetPopup2.default, { status: this.state.planetPopupStatus, hidePopup: this.hidePlanetPopup })
       );
     }
   }]);

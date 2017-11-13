@@ -7,8 +7,8 @@ export default class Popup extends Component {
          <section className="popup-wrap">
            <img src="/img/close1.png" onClick={this.props.hidePopup}/>
          </section>
-         <section className="popup-content">
-           {this.props.children}
+         <section className={"popup-content " + this.props.style}>
+           <section>{this.props.children}</section>
          </section>
 
 

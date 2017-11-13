@@ -73,6 +73,9 @@ h2 {
 	color: white;
 	text-align: center;
 }
+a {
+	text-decoration: none;
+}
 
 /*------------------------------ Planet-all ------------------------------*/
 .container {
@@ -139,7 +142,7 @@ h2 {
 li.left {
   margin-right: auto;
 	font-family: 'Righteous', cursive;
-	
+
 
 }
 
