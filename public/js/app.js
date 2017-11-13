@@ -17844,22 +17844,23 @@ var CheckBoxForm = function (_Component) {
   _inherits(CheckBoxForm, _Component);
 
   function CheckBoxForm() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
     _classCallCheck(this, CheckBoxForm);
 
-    var _this = _possibleConstructorReturn(this, (CheckBoxForm.__proto__ || Object.getPrototypeOf(CheckBoxForm)).call(this));
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
 
-    _this.handleClick = function () {
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = CheckBoxForm.__proto__ || Object.getPrototypeOf(CheckBoxForm)).call.apply(_ref, [this].concat(args))), _this), _this.handleClick = function () {
       if (_this.state.showBoxForm) {
         _this.setState({ showBoxForm: false });
       } else {
         _this.setState({ showBoxForm: true });
       }
-    };
-
-    _this.state = {
-      showBoxForm: false
-    };
-    return _this;
+    }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(CheckBoxForm, [{

@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 
 
 export default class CheckBoxForm extends Component {
-
+  constructor() {
+    super();
+    this.state = {
+      showBoxForm: false
+    }
+  }
 
   handleClick = () => {
     if (this.state.showBoxForm) {
