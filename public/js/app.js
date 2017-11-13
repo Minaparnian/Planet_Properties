@@ -18014,7 +18014,7 @@ var CheckBoxForm = function (_Component) {
         null,
         _react2.default.createElement(
           "a",
-          { href: "#", onClick: this.handleClick, ref: "profilebtn" },
+          { href: "#", onClick: this.handleClick, className: "advancecheck" },
           "Advance Search"
         ),
         this.state.showBoxForm ? this.renderAdvanceSearch() : null

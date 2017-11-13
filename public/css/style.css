@@ -206,7 +206,11 @@ li.left {
   display: flex;
   width: 480px;
   box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
-	margin: 70px auto;
+	margin:  auto;
+	margin-top: 70px;
+	margin-bottom: 10px;
+
+
 }
 
 .flex-form > * {
@@ -243,6 +247,11 @@ input[type="search"] {
 label {
 	color: white;
 	margin-bottom: 20px;
+}
+
+.advancecheck {
+	color: white;
+	margin-bottom: 10px;
 }
 
 
@@ -341,6 +350,7 @@ label {
 /* Bordered form */
 form {
     border: 3px solid #f1f1f1;
+		margin-top: 10px;
 }
 
 /* Full-width inputs */

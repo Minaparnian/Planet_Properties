@@ -59,7 +59,7 @@ export default class CheckBoxForm extends Component {
   render() {
     return(
       <section>
-      <a href="#" onClick={this.handleClick} ref="profilebtn">Advance Search</a>
+      <a href="#" onClick={this.handleClick} className="advancecheck">Advance Search</a>
         {
           this.state.showBoxForm? this.renderAdvanceSearch() : null
         }
