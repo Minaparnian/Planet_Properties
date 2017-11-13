@@ -17882,7 +17882,7 @@ var Form = function (_Component) {
             _react2.default.createElement(
               'h1',
               { className: 'main-title' },
-              'We are specialist to sell the planets'
+              'Find your perfect planet'
             )
           ),
           _react2.default.createElement(
@@ -17892,7 +17892,148 @@ var Form = function (_Component) {
               'form',
               { onSubmit: this._handleSubmit, className: 'flex-form' },
               _react2.default.createElement('input', { type: 'search', placeholder: 'Search by name of planet', value: this.state.query, onChange: this._handleChange }),
-              _react2.default.createElement('input', { type: 'submit', value: 'Search' })
+              _react2.default.createElement('input', { type: 'submit', value: 'Search' }),
+              _react2.default.createElement('input', { type: 'submit', value: 'Advance Search' })
+            ),
+            _react2.default.createElement(
+              'form',
+              null,
+              _react2.default.createElement(
+                'ul',
+                null,
+                _react2.default.createElement(
+                  'li',
+                  { className: 'list-inline' },
+                  _react2.default.createElement(
+                    'label',
+                    null,
+                    'Planet type'
+                  ),
+                  _react2.default.createElement(
+                    'select',
+                    { type: 'select', className: 'select-box' },
+                    _react2.default.createElement(
+                      'option',
+                      null,
+                      'Rock'
+                    ),
+                    _react2.default.createElement(
+                      'option',
+                      null,
+                      'Gas'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  { className: 'list-inline' },
+                  _react2.default.createElement(
+                    'label',
+                    null,
+                    'Price min'
+                  ),
+                  _react2.default.createElement(
+                    'select',
+                    { type: 'select', className: 'select-box' },
+                    _react2.default.createElement(
+                      'option',
+                      null,
+                      'Any'
+                    ),
+                    _react2.default.createElement(
+                      'option',
+                      null,
+                      '10,000'
+                    ),
+                    _react2.default.createElement(
+                      'option',
+                      null,
+                      '100,000'
+                    ),
+                    _react2.default.createElement(
+                      'option',
+                      null,
+                      '1,000,000'
+                    ),
+                    _react2.default.createElement(
+                      'option',
+                      null,
+                      '10,000,000'
+                    ),
+                    _react2.default.createElement(
+                      'option',
+                      null,
+                      '100,000,000'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  { className: 'list-inline' },
+                  _react2.default.createElement(
+                    'label',
+                    null,
+                    'Price max'
+                  ),
+                  _react2.default.createElement(
+                    'select',
+                    { type: 'select', className: 'select-box' },
+                    _react2.default.createElement(
+                      'option',
+                      null,
+                      'Any'
+                    ),
+                    _react2.default.createElement(
+                      'option',
+                      null,
+                      '10,000'
+                    ),
+                    _react2.default.createElement(
+                      'option',
+                      null,
+                      '100,000'
+                    ),
+                    _react2.default.createElement(
+                      'option',
+                      null,
+                      '1,000,000'
+                    ),
+                    _react2.default.createElement(
+                      'option',
+                      null,
+                      '10,000,000'
+                    ),
+                    _react2.default.createElement(
+                      'option',
+                      null,
+                      '100,000,000'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  { className: 'list-inline' },
+                  _react2.default.createElement(
+                    'label',
+                    null,
+                    'Water availability'
+                  ),
+                  _react2.default.createElement(
+                    'select',
+                    { type: 'select', className: 'select-box' },
+                    _react2.default.createElement(
+                      'option',
+                      null,
+                      'Yes'
+                    ),
+                    _react2.default.createElement(
+                      'option',
+                      null,
+                      'No'
+                    )
+                  )
+                )
+              )
             )
           )
         )
@@ -18574,43 +18715,57 @@ var PlanetItem = function (_Component) {
               _react2.default.createElement(
                 'li',
                 { className: 'planet-list' },
-                'Length Of The Day:',
+                'Length Of The Day',
+                _react2.default.createElement('hr', null),
+                _react2.default.createElement('br', null),
                 this.props.lengthOfTheDay
               ),
               _react2.default.createElement(
                 'li',
                 { className: 'planet-list' },
-                ' Distance From Sun:',
+                ' Distance From Sun',
+                _react2.default.createElement('hr', null),
+                _react2.default.createElement('br', null),
                 this.props.distanceFromSun
               ),
               _react2.default.createElement(
                 'li',
                 { className: 'planet-list' },
-                ' Average Temp:',
+                ' Average Temp',
+                _react2.default.createElement('hr', null),
+                _react2.default.createElement('br', null),
                 this.props.averageTemp
               ),
               _react2.default.createElement(
                 'li',
                 { className: 'planet-list' },
-                'Water:',
+                'Water',
+                _react2.default.createElement('hr', null),
+                _react2.default.createElement('br', null),
                 this.props.water
               ),
               _react2.default.createElement(
                 'li',
                 { className: 'planet-list' },
-                'Surface Area:',
+                'Surface Area',
+                _react2.default.createElement('hr', null),
+                _react2.default.createElement('br', null),
                 this.props.surfaceArea
               ),
               _react2.default.createElement(
                 'li',
                 { className: 'planet-list' },
-                'MadeOf:',
+                'MadeOf',
+                _react2.default.createElement('hr', null),
+                _react2.default.createElement('br', null),
                 this.props.madeOf
               ),
               _react2.default.createElement(
                 'li',
                 { className: 'planet-list' },
-                'Price:',
+                'Price',
+                _react2.default.createElement('hr', null),
+                _react2.default.createElement('br', null),
                 this.props.price
               )
             ),

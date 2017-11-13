@@ -25,13 +25,13 @@ export default class PlanetItem extends Component {
           <h1 className="planet-pop-title">{this.props.name}</h1>
           <section>
           <ul>
-          <li className="planet-list">Length Of The Day:{this.props.lengthOfTheDay}</li>
-          <li className="planet-list"> Distance From Sun:{this.props.distanceFromSun}</li>
-          <li className="planet-list"> Average Temp:{this.props.averageTemp}</li>
-          <li className="planet-list">Water:{this.props.water}</li>
-          <li className="planet-list">Surface Area:{this.props.surfaceArea}</li>
-          <li className="planet-list">MadeOf:{this.props.madeOf}</li>
-          <li className="planet-list">Price:{this.props.price}</li>
+          <li className="planet-list">Length Of The Day<hr/><br/>{this.props.lengthOfTheDay}</li>
+          <li className="planet-list"> Distance From Sun<hr/><br/>{this.props.distanceFromSun}</li>
+          <li className="planet-list"> Average Temp<hr/><br/>{this.props.averageTemp}</li>
+          <li className="planet-list">Water<hr/><br/>{this.props.water}</li>
+          <li className="planet-list">Surface Area<hr/><br/>{this.props.surfaceArea}</li>
+          <li className="planet-list">MadeOf<hr/><br/>{this.props.madeOf}</li>
+          <li className="planet-list">Price<hr/><br/>{this.props.price}</li>
 
           </ul>
           <button className="buy">Buy</button>

@@ -26,13 +26,47 @@ export default class Form extends Component {
       <section>
         <div className="cover">
           <div className="main-title-container">
-             <h1 className="main-title">We are specialist to sell the planets</h1>
+             <h1 className="main-title">Find your perfect planet</h1>
           </div>
           <div className="form-box">
              <form onSubmit={this._handleSubmit} className="flex-form">
 
                 <input type="search" placeholder="Search by name of planet" value={this.state.query} onChange={this._handleChange} />
                 <input type="submit" value="Search" />
+                <input type="submit" value="Advance Search" />
+            </form>
+            <form>
+
+               <ul>
+                 <li className="list-inline"><label>Planet type</label>
+                 <select type="select" className="select-box">
+                   <option>Rock</option>
+                   <option>Gas</option>
+                 </select></li>
+                 <li className="list-inline"><label>Price min</label>
+                 <select type="select" className="select-box">
+                   <option>Any</option>
+                   <option>10,000</option>
+                   <option>100,000</option>
+                   <option>1,000,000</option>
+                   <option>10,000,000</option>
+                   <option>100,000,000</option>
+                 </select></li>
+                 <li className="list-inline"><label>Price max</label>
+                 <select type="select" className="select-box">
+                   <option>Any</option>
+                   <option>10,000</option>
+                   <option>100,000</option>
+                   <option>1,000,000</option>
+                   <option>10,000,000</option>
+                   <option>100,000,000</option>
+                 </select></li>
+                 <li className="list-inline"><label>Water availability</label>
+                 <select type="select" className="select-box">
+                   <option>Yes</option>
+                   <option>No</option>
+                 </select></li>
+               </ul>
              </form>
            </div>
          </div>

@@ -141,7 +141,7 @@ a {
 
 li.left {
   margin-right: auto;
-	font-family: 'Righteous', cursive;
+	/*font-family: 'Righteous', cursive;*/
 
 
 }
@@ -194,6 +194,8 @@ li.left {
   transition: all 0.2s;
 }
 
+
+
 .flex-form input[type="submit"]:hover {
   background: #082756;
   border: 1px solid #082756;
@@ -202,7 +204,7 @@ li.left {
 .flex-form {
   display: -webkit-box;
   display: flex;
-  width: 500px;
+  width: 650px;
   box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
 	margin: 100px auto;
 }
@@ -221,6 +223,28 @@ li.left {
 input[type="search"] {
   flex-basis: 500px;
 }
+/*------------------------------ Select box ------------------------------*/
+
+.select-box {
+	border: 1px solid black;
+	width: 100%;
+	height: 30px;
+	margin-top: 20px;
+	margin-right: 10px;
+
+
+}
+
+.list-inline{
+	display: inline-block;
+	border: 1px solid white;
+
+}
+label {
+	color: white;
+	margin-bottom: 20px;
+}
+
 
 /*------------------------------ Popup ------------------------------*/
 
