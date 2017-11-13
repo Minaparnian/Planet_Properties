@@ -88,16 +88,21 @@ a {
 
 .planet-all {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: -10px 0 0 10px;
   -webkit-box-pack: center;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   -webkit-box-align: start;
-  align-items: flex-start;
+  -ms-flex-align: start;
+      align-items: flex-start;
 	margin-top: 28px;
 }
 
@@ -107,7 +112,10 @@ a {
       display: inline-block;
       margin: 20px;
       /*padding: 20px;*/
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      -webkit-transition: 0.2s ease-in-out;
+      -o-transition: 0.2s ease-in-out;
       transition: 0.2s ease-in-out;
     }
 
@@ -124,16 +132,18 @@ a {
 
 /*change list direction from block to inline*/
   display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
 
   /*define the flex container's main and cross axes*/
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   /*Push all the list on the right*/
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background-attachment: fixed;
   overflow: hidden;
 
@@ -172,14 +182,18 @@ li.left {
   width: 100%;
   padding: 20px 50px;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   -webkit-box-pack: center;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   -webkit-box-align: center;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 
 }
 
@@ -190,7 +204,7 @@ li.left {
   padding: 0 30px;
   cursor: pointer;
   -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -203,9 +217,11 @@ li.left {
 
 .flex-form {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 480px;
-  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
 	margin:  auto;
 	margin-top: 70px;
 	margin-bottom: 10px;
@@ -225,7 +241,8 @@ li.left {
 }
 
 input[type="search"] {
-  flex-basis: 500px;
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
 }
 /*------------------------------ Select box ------------------------------*/
 
@@ -282,7 +299,9 @@ label {
 	width: 400px;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 /*------------------------------ Planet popup ------------------------------*/
@@ -314,7 +333,9 @@ label {
 	width: 100%;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 .planet-list {
@@ -360,7 +381,8 @@ input[type=text], input[type=password] {
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 /* Set a style for all buttons */
@@ -445,7 +467,8 @@ span.psw {
 @media all and (max-width: 800px) {
   .navigation {
     /*when the screen is less than 800px justify list item center and have more space around*/
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -453,8 +476,10 @@ span.psw {
   .navigation {
 
     /*wrap the list item block*/
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
     padding: 0;
     text-align: center;
   }
@@ -477,7 +502,8 @@ span.psw {
   }
 
   input[type="search"] {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 
   .flex-form > * {
@@ -508,14 +534,17 @@ span.psw {
 
 .flex-form {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
 
   input[type="search"] {
-    flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
   }
 
   label {
