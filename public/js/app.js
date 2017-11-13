@@ -17868,6 +17868,160 @@ var Form = function (_Component) {
       var query = this.state.query;
     }
   }, {
+    key: 'renderAdvanceSearch',
+    value: function renderAdvanceSearch() {
+      return _react2.default.createElement(
+        'form',
+        null,
+        _react2.default.createElement(
+          'ul',
+          null,
+          _react2.default.createElement(
+            'li',
+            { className: 'list-inline' },
+            _react2.default.createElement(
+              'label',
+              null,
+              'Planet type'
+            ),
+            _react2.default.createElement(
+              'select',
+              { type: 'select', className: 'select-box' },
+              _react2.default.createElement(
+                'option',
+                null,
+                'Rock'
+              ),
+              _react2.default.createElement(
+                'option',
+                null,
+                'Gas'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'list-inline' },
+            _react2.default.createElement(
+              'label',
+              null,
+              'Price min'
+            ),
+            _react2.default.createElement(
+              'select',
+              { type: 'select', className: 'select-box' },
+              _react2.default.createElement(
+                'option',
+                null,
+                'Any'
+              ),
+              _react2.default.createElement(
+                'option',
+                null,
+                '10,000'
+              ),
+              _react2.default.createElement(
+                'option',
+                null,
+                '100,000'
+              ),
+              _react2.default.createElement(
+                'option',
+                null,
+                '1,000,000'
+              ),
+              _react2.default.createElement(
+                'option',
+                null,
+                '10,000,000'
+              ),
+              _react2.default.createElement(
+                'option',
+                null,
+                '100,000,000'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'list-inline' },
+            _react2.default.createElement(
+              'label',
+              null,
+              'Price max'
+            ),
+            _react2.default.createElement(
+              'select',
+              { type: 'select', className: 'select-box' },
+              _react2.default.createElement(
+                'option',
+                null,
+                'Any'
+              ),
+              _react2.default.createElement(
+                'option',
+                null,
+                '10,000'
+              ),
+              _react2.default.createElement(
+                'option',
+                null,
+                '100,000'
+              ),
+              _react2.default.createElement(
+                'option',
+                null,
+                '1,000,000'
+              ),
+              _react2.default.createElement(
+                'option',
+                null,
+                '10,000,000'
+              ),
+              _react2.default.createElement(
+                'option',
+                null,
+                '100,000,000'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'list-inline' },
+            _react2.default.createElement(
+              'label',
+              null,
+              'Water availability'
+            ),
+            _react2.default.createElement(
+              'select',
+              { type: 'select', className: 'select-box' },
+              _react2.default.createElement(
+                'option',
+                null,
+                'Yes'
+              ),
+              _react2.default.createElement(
+                'option',
+                null,
+                'No'
+              )
+            )
+          )
+        )
+      );
+    }
+  }, {
+    key: 'renderForm',
+    value: function renderForm() {
+      return _react2.default.createElement(
+        'form',
+        { onSubmit: this._handleSubmit, className: 'flex-form' },
+        _react2.default.createElement('input', { type: 'search', placeholder: 'Search by name of planet', value: this.state.query, onChange: this._handleChange }),
+        _react2.default.createElement('input', { type: 'submit', value: 'Search' })
+      );
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -17888,152 +18042,8 @@ var Form = function (_Component) {
           _react2.default.createElement(
             'div',
             { className: 'form-box' },
-            _react2.default.createElement(
-              'form',
-              { onSubmit: this._handleSubmit, className: 'flex-form' },
-              _react2.default.createElement('input', { type: 'search', placeholder: 'Search by name of planet', value: this.state.query, onChange: this._handleChange }),
-              _react2.default.createElement('input', { type: 'submit', value: 'Search' })
-            ),
-            _react2.default.createElement(
-              'form',
-              null,
-              _react2.default.createElement(
-                'ul',
-                null,
-                _react2.default.createElement(
-                  'li',
-                  { className: 'list-inline' },
-                  _react2.default.createElement(
-                    'label',
-                    null,
-                    'Planet type'
-                  ),
-                  _react2.default.createElement(
-                    'select',
-                    { type: 'select', className: 'select-box' },
-                    _react2.default.createElement(
-                      'option',
-                      null,
-                      'Rock'
-                    ),
-                    _react2.default.createElement(
-                      'option',
-                      null,
-                      'Gas'
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  'li',
-                  { className: 'list-inline' },
-                  _react2.default.createElement(
-                    'label',
-                    null,
-                    'Price min'
-                  ),
-                  _react2.default.createElement(
-                    'select',
-                    { type: 'select', className: 'select-box' },
-                    _react2.default.createElement(
-                      'option',
-                      null,
-                      'Any'
-                    ),
-                    _react2.default.createElement(
-                      'option',
-                      null,
-                      '10,000'
-                    ),
-                    _react2.default.createElement(
-                      'option',
-                      null,
-                      '100,000'
-                    ),
-                    _react2.default.createElement(
-                      'option',
-                      null,
-                      '1,000,000'
-                    ),
-                    _react2.default.createElement(
-                      'option',
-                      null,
-                      '10,000,000'
-                    ),
-                    _react2.default.createElement(
-                      'option',
-                      null,
-                      '100,000,000'
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  'li',
-                  { className: 'list-inline' },
-                  _react2.default.createElement(
-                    'label',
-                    null,
-                    'Price max'
-                  ),
-                  _react2.default.createElement(
-                    'select',
-                    { type: 'select', className: 'select-box' },
-                    _react2.default.createElement(
-                      'option',
-                      null,
-                      'Any'
-                    ),
-                    _react2.default.createElement(
-                      'option',
-                      null,
-                      '10,000'
-                    ),
-                    _react2.default.createElement(
-                      'option',
-                      null,
-                      '100,000'
-                    ),
-                    _react2.default.createElement(
-                      'option',
-                      null,
-                      '1,000,000'
-                    ),
-                    _react2.default.createElement(
-                      'option',
-                      null,
-                      '10,000,000'
-                    ),
-                    _react2.default.createElement(
-                      'option',
-                      null,
-                      '100,000,000'
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  'li',
-                  { className: 'list-inline' },
-                  _react2.default.createElement(
-                    'label',
-                    null,
-                    'Water availability'
-                  ),
-                  _react2.default.createElement(
-                    'select',
-                    { type: 'select', className: 'select-box' },
-                    _react2.default.createElement(
-                      'option',
-                      null,
-                      'Yes'
-                    ),
-                    _react2.default.createElement(
-                      'option',
-                      null,
-                      'No'
-                    )
-                  )
-                )
-              )
-            )
+            this.renderForm(),
+            this.renderAdvanceSearch()
           )
         )
       );
