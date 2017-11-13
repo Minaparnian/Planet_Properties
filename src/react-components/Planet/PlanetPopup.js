@@ -38,35 +38,12 @@ export default class PlanetPopup extends Component {
 
 
 
-renderPlanetInfo() {
-  return(
-    <header>
-      <section className="header-shadow">
-        <h1 className="planet-pop-title">{this.state.Planet[0].name}</h1>
-        <section>
-        <ul>
-        <li className="planet-list">Length Of The Day:{this.state.Planet[0].lengthOfTheDay}</li>
-        <li className="planet-list"> Distance From Sun:{this.state.Planet[0].distanceFromSun}</li>
-        <li className="planet-list"> Average Temp:{this.state.Planet[0].averageTemp}</li>
-        <li className="planet-list">Water:{this.state.Planet[0].water}</li>
-        <li className="planet-list">Surface Area:{this.state.Planet[0].surfaceArea}</li>
-        <li className="planet-list">MadeOf:{this.state.Planet[0].madeOf}</li>
-        <li className="planet-list">Price:{this.state.Planet[0].price}</li>
 
-        </ul>
-        <button className="buy">Buy</button>
-        </section>
-      </section>
-
-    </header>
-
-  );
-}
 
   render() {
     return(
       <PopupPlanet {...this.props} style="planet-popup">
-       {this.renderPlanetInfo()}
+       
       </PopupPlanet>
     );
   }

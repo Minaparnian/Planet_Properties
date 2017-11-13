@@ -18552,6 +18552,78 @@ var PlanetItem = function (_Component) {
   }
 
   _createClass(PlanetItem, [{
+    key: 'renderPlanetInfo',
+    value: function renderPlanetInfo() {
+      return _react2.default.createElement(
+        'header',
+        null,
+        _react2.default.createElement(
+          'section',
+          { className: 'header-shadow' },
+          _react2.default.createElement(
+            'h1',
+            { className: 'planet-pop-title' },
+            this.props.name
+          ),
+          _react2.default.createElement(
+            'section',
+            null,
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                { className: 'planet-list' },
+                'Length Of The Day:',
+                this.props.lengthOfTheDay
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'planet-list' },
+                ' Distance From Sun:',
+                this.props.distanceFromSun
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'planet-list' },
+                ' Average Temp:',
+                this.props.averageTemp
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'planet-list' },
+                'Water:',
+                this.props.water
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'planet-list' },
+                'Surface Area:',
+                this.props.surfaceArea
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'planet-list' },
+                'MadeOf:',
+                this.props.madeOf
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'planet-list' },
+                'Price:',
+                this.props.price
+              )
+            ),
+            _react2.default.createElement(
+              'button',
+              { className: 'buy' },
+              'Buy'
+            )
+          )
+        )
+      );
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -18567,7 +18639,11 @@ var PlanetItem = function (_Component) {
             this.props.name
           )
         ),
-        _react2.default.createElement(_PlanetPopup2.default, { status: this.state.planetPopupStatus, hidePopup: this.hidePlanetPopup })
+        _react2.default.createElement(
+          _PlanetPopup2.default,
+          { status: this.state.planetPopupStatus, hidePopup: this.hidePlanetPopup },
+          this.renderPlanetInfo()
+        )
       );
     }
   }]);
@@ -18695,85 +18771,9 @@ var PlanetPopup = function (_Component) {
   }
 
   _createClass(PlanetPopup, [{
-    key: 'renderPlanetInfo',
-    value: function renderPlanetInfo() {
-      return _react2.default.createElement(
-        'header',
-        null,
-        _react2.default.createElement(
-          'section',
-          { className: 'header-shadow' },
-          _react2.default.createElement(
-            'h1',
-            { className: 'planet-pop-title' },
-            this.state.Planet[0].name
-          ),
-          _react2.default.createElement(
-            'section',
-            null,
-            _react2.default.createElement(
-              'ul',
-              null,
-              _react2.default.createElement(
-                'li',
-                { className: 'planet-list' },
-                'Length Of The Day:',
-                this.state.Planet[0].lengthOfTheDay
-              ),
-              _react2.default.createElement(
-                'li',
-                { className: 'planet-list' },
-                ' Distance From Sun:',
-                this.state.Planet[0].distanceFromSun
-              ),
-              _react2.default.createElement(
-                'li',
-                { className: 'planet-list' },
-                ' Average Temp:',
-                this.state.Planet[0].averageTemp
-              ),
-              _react2.default.createElement(
-                'li',
-                { className: 'planet-list' },
-                'Water:',
-                this.state.Planet[0].water
-              ),
-              _react2.default.createElement(
-                'li',
-                { className: 'planet-list' },
-                'Surface Area:',
-                this.state.Planet[0].surfaceArea
-              ),
-              _react2.default.createElement(
-                'li',
-                { className: 'planet-list' },
-                'MadeOf:',
-                this.state.Planet[0].madeOf
-              ),
-              _react2.default.createElement(
-                'li',
-                { className: 'planet-list' },
-                'Price:',
-                this.state.Planet[0].price
-              )
-            ),
-            _react2.default.createElement(
-              'button',
-              { className: 'buy' },
-              'Buy'
-            )
-          )
-        )
-      );
-    }
-  }, {
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(
-        _PopupPlanet2.default,
-        _extends({}, this.props, { style: 'planet-popup' }),
-        this.renderPlanetInfo()
-      );
+      return _react2.default.createElement(_PopupPlanet2.default, _extends({}, this.props, { style: 'planet-popup' }));
     }
   }]);
 
